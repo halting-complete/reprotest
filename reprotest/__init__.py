@@ -192,8 +192,8 @@ def basename(p):
     # works more intuitively for paths with a trailing /
     return os.path.normpath(os.path.basename(os.path.normpath(p)))
 
-# put build artifacts in ${dist}/source_dir, to support tools that put artifacts in ..
-VSRC_DIR = "source_dir"
+# put build artifacts in ${dist}/source-root, to support tools that put artifacts in ..
+VSRC_DIR = "source-root"
 
 
 # time zone, locales, disorderfs, host name, user/group, shell, CPU
